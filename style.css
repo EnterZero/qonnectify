@@ -5,7 +5,6 @@
   font-size: 62.5%;
   /* color */
   --black: #212830;
-  --grey: #64748b;
   --white: #efeff1;
   --highlight: #ea580c;
 }
@@ -28,51 +27,4 @@ body {
 main {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-form {
-  width: 50%;
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 3%;
-  font-size: 1.3rem;
-  font-weight: 600;
-}
-
-input {
-  width: 50%;
-  padding: 3px;
-  color: var(--black);
-  text-align: center;
-}
-
-input:focus {
-  outline: none;
-}
-
-button {
-  background-color: var(--highlight);
-  padding: 5px 20px;
-  border: none;
-  border-radius: 5px;
-}
-
-button:hover {
-  box-shadow: 0 0 7px 3px var(--highlight);
-}
-
-@media(max-width: 1024px) {
-  form {
-    width: 100%;
-  }
-
-  button {
-    box-shadow: 0 0 7px 3px var(--highlight);
-  }
 }
