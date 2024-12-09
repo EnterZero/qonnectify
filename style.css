@@ -1,15 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 
+/* space */
+/* 0 / 4 / 8 / 16 / 24 / 32 / 48 / 64 / 96 / 128 */
+/* font */
+/* 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 48 / 60 */
+
 :root {
   /* font */
   font-size: 62.5%;
   /* color */
-  --black: #212830;
+  --black: #00100e;
   --white: #efeff1;
-  --highlight: #ea580c;
+  --red: #f96416;
+  --highlight: #28ebcf;
+  /* shadow */
+  --shadow: 0 0 7px 3px var(--highlight);
 }
 
 * {
+  /* reset */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -17,7 +26,6 @@
   font-family: 'Montserrat', sans-serif;
   color: var(--white);
 }
-
 
 body {
   /* color */
@@ -27,4 +35,34 @@ body {
 main {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.qonnect {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+input {
+  padding: 0.2rem 0.4rem;
+  color: var(--black);
+}
+
+.login {
+  padding: 0.4rem 0.8rem;
+  background-color: var(--highlight);
+  border: none;
+  border-radius: 0.4rem;
+  color: var(--black);
+  font-weight: 500;
 }

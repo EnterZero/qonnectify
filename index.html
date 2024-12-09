@@ -4,15 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Qonnectify Alpha">
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Qonnectify">
+  <link rel="stylesheet" href="./style.css">
   <title>Qonnectify</title>
 </head>
 
 <body>
-  <!-- v0.1.0.2 (alpha) -->
+  <!-- v0.1.0.3 (alpha) -->
   <main>
-
+    <p class="qonnect">Qonnectify</p>
+    <form>
+      <label for="email">
+        <input type="email" name="email" id="email" placeholder="email" required>
+      </label>
+      <label for="password">
+        <input type="password" name="password" id="password" placeholder="password" required>
+      </label>
+      <button class="login" type="button" onclick="window.location.href='./pages/main.html'">Qonnect</button>
+    </form>
   </main>
 </body>
 
