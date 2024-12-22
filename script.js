@@ -1,6 +1,6 @@
 'use strict';
 
-// open & close
+// open and close
 const open = function () { document.querySelector('.modal').classList.remove('hidden') };
 const close = function () { document.querySelector('.modal').classList.add('hidden') };
 const esc = function (i) {
@@ -13,5 +13,5 @@ const esc = function (i) {
 document.querySelector('.open-modal').addEventListener('click', open)
 
 // close modal
-document.querySelector('.close').addEventListener('click', close)
+document.querySelector('.close-modal').addEventListener('click', close)
 document.addEventListener('keydown', esc)

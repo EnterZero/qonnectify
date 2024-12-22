@@ -106,11 +106,41 @@ input {
   display: none;
 }
 
-.close {
+.close-modal {
   position: absolute;
   top: 1rem;
   right: 1rem;
   border: none;
   font-size: 3rem;
   font-weight: 700;
+}
+
+#menu {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.nav-main {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+}
+
+.nav-main ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-main ul li {
+  list-style: none;
+}
+
+.nav-main ul li a img {
+  width: 3rem;
 }
